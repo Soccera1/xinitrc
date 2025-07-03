@@ -12,11 +12,13 @@ This script is executed by `startx` or a display manager. It sets the following 
 It also launches the following programs:
 
 * `dunst`: a lightweight notification daemon
+* `gentoo-pipewire-launcher`: a script to launch the PipeWire media server
+* `udiskie`: a udisks2-based automounter
 * `dwm`: a dynamic window manager
 
 ## `.xprofile`
 
-This script is sourced by some display managers. It launches the following programs:
+This script is sourced by some display managers. It sets the following environment variables:
 
-* `gentoo-pipewire-launcher`: a script to launch the PipeWire media server
-* `udiskie`: a udisks2-based automounter
+* `ADW_COLOR_SCHEME=prefer-dark`
+* `GTK_THEME=Adwaita:dark`
